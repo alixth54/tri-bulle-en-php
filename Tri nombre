@@ -1,0 +1,20 @@
+algorithme
+Varaible :
+    Tri,tableau[entier]
+    A : entier
+
+DEBUT
+saisir 'entrez des nombres'
+Tri[i]<-Lire
+    Pour j allantde 0 a Longueur(Tri) pas 1 faire
+        Pour i allantde Longueur(Tri) a 0 pas -1 faire
+            Si Tri[i]>Tri[i+1]
+            Alors
+                A<-Tri[i]
+                Tri[i]<-Tri[i+1]
+                Tri[i+1]<-A
+            Finsi
+        Finpour   
+    Finpour
+ 
+FIN

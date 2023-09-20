@@ -1,0 +1,15 @@
+<?php
+//variables
+$tri = [0,5,3,9,8,4,6,5,2,3,55];
+
+for ($i=0; $i<sizeof($tri); $i++){
+        for ($j=0; $j<sizeof($tri)-1; $j++){
+                if ($tri[$j] > $tri[$j+1])
+                {$A = $tri[$j];
+                $tri[$j] = $tri[$j+1];
+                $tri[$j+1] = $A;
+                }
+        }
+}
+print_r($tri)
+?>
